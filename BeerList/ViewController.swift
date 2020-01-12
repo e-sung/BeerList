@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ModelKit
 
 class ViewController: UIViewController {
 

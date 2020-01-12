@@ -9,6 +9,15 @@
           "revision": "c3c0cac3d4c176b04404e3574d62b51776277384",
           "version": null
         }
+      },
+      {
+        "package": "SDRemoteImageView",
+        "repositoryURL": "https://github.com/e-sung/SDRemoteImageView.git",
+        "state": {
+          "branch": "master",
+          "revision": "d9089f33780e0b74c2e9293c88c8373c2c7a2fc0",
+          "version": null
+        }
       }
     ]
   },

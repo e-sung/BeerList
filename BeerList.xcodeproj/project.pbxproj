@@ -26,6 +26,8 @@
 		F0769DA523CB104200B6DF15 /* BeerFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0769DA423CB104200B6DF15 /* BeerFetcher.swift */; };
 		F0769DAD23CB10B200B6DF15 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F0769DAC23CB10B200B6DF15 /* RxCocoa */; };
 		F0769DAF23CB10B200B6DF15 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F0769DAE23CB10B200B6DF15 /* RxSwift */; };
+		F0769DB223CB112500B6DF15 /* SDRemoteImageView in Frameworks */ = {isa = PBXBuildFile; productRef = F0769DB123CB112500B6DF15 /* SDRemoteImageView */; };
+		F0769DB423CB11CF00B6DF15 /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0769DB323CB11CF00B6DF15 /* BeerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,7 @@
 		F0769DA023CB0FAA00B6DF15 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		F0769DA223CB101500B6DF15 /* ClientAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAPIError.swift; sourceTree = "<group>"; };
 		F0769DA423CB104200B6DF15 /* BeerFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerFetcher.swift; sourceTree = "<group>"; };
+		F0769DB323CB11CF00B6DF15 /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0769DB223CB112500B6DF15 /* SDRemoteImageView in Frameworks */,
 				F0769D9523CB0EC100B6DF15 /* ModelKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +185,7 @@
 				F0769D4B23CB0E7700B6DF15 /* AppDelegate.swift */,
 				F0769D4D23CB0E7700B6DF15 /* SceneDelegate.swift */,
 				F0769D4F23CB0E7700B6DF15 /* ViewController.swift */,
+				F0769DB323CB11CF00B6DF15 /* BeerCell.swift */,
 				F0769D5123CB0E7700B6DF15 /* Main.storyboard */,
 				F0769D5423CB0E7B00B6DF15 /* Assets.xcassets */,
 				F0769D5623CB0E7B00B6DF15 /* LaunchScreen.storyboard */,
@@ -266,6 +271,7 @@
 			);
 			name = BeerList;
 			packageProductDependencies = (
+				F0769DB123CB112500B6DF15 /* SDRemoteImageView */,
 			);
 			productName = BeerList;
 			productReference = F0769D4823CB0E7700B6DF15 /* BeerList.app */;
@@ -390,6 +396,7 @@
 			mainGroup = F0769D3F23CB0E7700B6DF15;
 			packageReferences = (
 				F0769DA623CB109700B6DF15 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F0769DB023CB112500B6DF15 /* XCRemoteSwiftPackageReference "SDRemoteImageView" */,
 			);
 			productRefGroup = F0769D4923CB0E7700B6DF15 /* Products */;
 			projectDirPath = "";
@@ -453,6 +460,7 @@
 				F0769D5023CB0E7700B6DF15 /* ViewController.swift in Sources */,
 				F0769D4C23CB0E7700B6DF15 /* AppDelegate.swift in Sources */,
 				F0769D4E23CB0E7700B6DF15 /* SceneDelegate.swift in Sources */,
+				F0769DB423CB11CF00B6DF15 /* BeerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,6 +950,14 @@
 				kind = branch;
 			};
 		};
+		F0769DB023CB112500B6DF15 /* XCRemoteSwiftPackageReference "SDRemoteImageView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/e-sung/SDRemoteImageView.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -954,6 +970,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F0769DA623CB109700B6DF15 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		F0769DB123CB112500B6DF15 /* SDRemoteImageView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0769DB023CB112500B6DF15 /* XCRemoteSwiftPackageReference "SDRemoteImageView" */;
+			productName = SDRemoteImageView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
