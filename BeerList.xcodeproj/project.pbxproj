@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,9 @@
 		F0769D9F23CB0ED500B6DF15 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0769D9E23CB0ED500B6DF15 /* Beer.swift */; };
 		F0769DA123CB0FAA00B6DF15 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0769DA023CB0FAA00B6DF15 /* EndPoint.swift */; };
 		F0769DA323CB101500B6DF15 /* ClientAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0769DA223CB101500B6DF15 /* ClientAPIError.swift */; };
+		F0769DA523CB104200B6DF15 /* BeerFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0769DA423CB104200B6DF15 /* BeerFetcher.swift */; };
+		F0769DAD23CB10B200B6DF15 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F0769DAC23CB10B200B6DF15 /* RxCocoa */; };
+		F0769DAF23CB10B200B6DF15 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F0769DAE23CB10B200B6DF15 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,7 @@
 		F0769D9E23CB0ED500B6DF15 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		F0769DA023CB0FAA00B6DF15 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		F0769DA223CB101500B6DF15 /* ClientAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAPIError.swift; sourceTree = "<group>"; };
+		F0769DA423CB104200B6DF15 /* BeerFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0769DAF23CB10B200B6DF15 /* RxSwift in Frameworks */,
+				F0769DAD23CB10B200B6DF15 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +159,7 @@
 				F0769D8123CB0EC100B6DF15 /* ModelKit */,
 				F0769D8E23CB0EC100B6DF15 /* ModelKitTests */,
 				F0769D4923CB0E7700B6DF15 /* Products */,
+				F0769DAB23CB10B200B6DF15 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,6 +214,7 @@
 				F0769D9E23CB0ED500B6DF15 /* Beer.swift */,
 				F0769DA023CB0FAA00B6DF15 /* EndPoint.swift */,
 				F0769DA223CB101500B6DF15 /* ClientAPIError.swift */,
+				F0769DA423CB104200B6DF15 /* BeerFetcher.swift */,
 				F0769D8323CB0EC100B6DF15 /* Info.plist */,
 			);
 			path = ModelKit;
@@ -219,6 +227,13 @@
 				F0769D9123CB0EC100B6DF15 /* Info.plist */,
 			);
 			path = ModelKitTests;
+			sourceTree = "<group>";
+		};
+		F0769DAB23CB10B200B6DF15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +265,8 @@
 				F0769D9423CB0EC100B6DF15 /* PBXTargetDependency */,
 			);
 			name = BeerList;
+			packageProductDependencies = (
+			);
 			productName = BeerList;
 			productReference = F0769D4823CB0E7700B6DF15 /* BeerList.app */;
 			productType = "com.apple.product-type.application";
@@ -304,6 +321,10 @@
 			dependencies = (
 			);
 			name = ModelKit;
+			packageProductDependencies = (
+				F0769DAC23CB10B200B6DF15 /* RxCocoa */,
+				F0769DAE23CB10B200B6DF15 /* RxSwift */,
+			);
 			productName = ModelKit;
 			productReference = F0769D8023CB0EC100B6DF15 /* ModelKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -367,6 +388,9 @@
 				Base,
 			);
 			mainGroup = F0769D3F23CB0E7700B6DF15;
+			packageReferences = (
+				F0769DA623CB109700B6DF15 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = F0769D4923CB0E7700B6DF15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -455,6 +479,7 @@
 				F0769DA123CB0FAA00B6DF15 /* EndPoint.swift in Sources */,
 				F0769D9F23CB0ED500B6DF15 /* Beer.swift in Sources */,
 				F0769DA323CB101500B6DF15 /* ClientAPIError.swift in Sources */,
+				F0769DA523CB104200B6DF15 /* BeerFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,6 +932,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0769DA623CB109700B6DF15 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0769DAC23CB10B200B6DF15 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0769DA623CB109700B6DF15 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F0769DAE23CB10B200B6DF15 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0769DA623CB109700B6DF15 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F0769D4023CB0E7700B6DF15 /* Project object */;
 }
