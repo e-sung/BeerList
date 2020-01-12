@@ -16,6 +16,7 @@ public protocol BeerFetcher {
 
 public class SDBeerFetcher: BeerFetcher {
     let jsonDecoder = JSONDecoder()
+    public static let itemPerPage:Int = 25
     public init() {
     }
     public func fetchBeers(page: Int) -> Observable<[Beer]> {
