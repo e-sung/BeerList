@@ -44,7 +44,7 @@ class BeerListViewController: UITableViewController {
 extension BeerListViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         let items = beerListDataSource.items
-        let page = (items.count / 25) + 1
+        let page = (items.count / SDBeerFetcher.itemPerPage) + 1
         if indexPaths.contains(where: { $0.row == items.count - 1}) {
             fetchBeers(for: page)
         }
