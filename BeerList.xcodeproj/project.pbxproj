@@ -21,6 +21,7 @@
 		F0769D9523CB0EC100B6DF15 /* ModelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0769D8023CB0EC100B6DF15 /* ModelKit.framework */; };
 		F0769D9623CB0EC100B6DF15 /* ModelKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F0769D8023CB0EC100B6DF15 /* ModelKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F0769D9F23CB0ED500B6DF15 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0769D9E23CB0ED500B6DF15 /* Beer.swift */; };
+		F0769DA123CB0FAA00B6DF15 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0769DA023CB0FAA00B6DF15 /* EndPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		F0769D8F23CB0EC100B6DF15 /* ModelKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelKitTests.swift; sourceTree = "<group>"; };
 		F0769D9123CB0EC100B6DF15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0769D9E23CB0ED500B6DF15 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		F0769DA023CB0FAA00B6DF15 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			children = (
 				F0769D8223CB0EC100B6DF15 /* ModelKit.h */,
 				F0769D9E23CB0ED500B6DF15 /* Beer.swift */,
+				F0769DA023CB0FAA00B6DF15 /* EndPoint.swift */,
 				F0769D8323CB0EC100B6DF15 /* Info.plist */,
 			);
 			path = ModelKit;
@@ -446,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0769DA123CB0FAA00B6DF15 /* EndPoint.swift in Sources */,
 				F0769D9F23CB0ED500B6DF15 /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
